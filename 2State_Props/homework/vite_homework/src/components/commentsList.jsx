@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-const Commentlist = () => {
+const CommentsList = () => {
     const [comments, setСomments] = useState([
         { id: 1, text: 'Это первый комментарий' },
         { id: 2, text: 'Это второй комментарий' },
@@ -9,7 +9,7 @@ const Commentlist = () => {
 
     const deleteComment = (commentId) => {
         // передаём в функцию "удаления", которая вызывается при нажатии на кнопку, 
-        // сomment.id, который получаем при рендеринге из comments.map
+        // comment.id, который получаем при рендеринге из comments.map
         const updatedComments = comments.filter((comment) => comment.id !== commentId);
         setСomments(updatedComments);
     };
@@ -26,4 +26,4 @@ const Commentlist = () => {
     );
 };
 
-export default Commentlist;
+export default CommentsList;
