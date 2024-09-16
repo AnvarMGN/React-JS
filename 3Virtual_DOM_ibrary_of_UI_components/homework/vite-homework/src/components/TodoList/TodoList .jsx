@@ -15,7 +15,7 @@
 import { Button, Card, CardActionArea, CardContent, TextField, Typography } from "@mui/material";
 import { useState } from "react";
 
-function TodoList() {
+export const TodoList = () => {
     const [task, setTask] = useState('');
     const [taskList, setTaskList] = useState([]);
 
@@ -28,17 +28,12 @@ function TodoList() {
             setTask('');
             return;
         }
-
-        // const newArray = [...taskList, value];
-        // const newArray = [...taskList, {value, id: Date.now()}];// добавим уникальный идентификатор id: Date.now(); value: value, 
-        const newArray = [...taskList, { value: task, id: crypto.randomUUID() }];// второй вариант
+        const newArray = [...taskList, { value: task, id: crypto.randomUUID() }];
         setTaskList(newArray);
         setTask('');
     };
 
     const deleteTask = (taskId) => {
-        // передаём в функцию "удаления", которая вызывается при нажатии на кнопку, 
-        // сomment.id, который получаем при рендеринге из comments.map
         const updateTaskList = taskList.filter((task) => task.id !== taskId);
         setTaskList(updateTaskList);
     };
@@ -47,8 +42,6 @@ function TodoList() {
         <>
             <div style={{ display: "grid", justifyContent: "center", gap: "5px" }} >
                 <h2>Список дел</h2>
-                {/* <input type="text" placeholder="Введите текст" onChange={updateText} value={task}></input> */}
-                {/* <button onClick={addList}>Ввести данные</button> */}
                 <div style={{ display: "flex", justifyContent: "center", gap: "5px" }} >
                     <TextField
                         label='Введите задание'
@@ -91,15 +84,6 @@ function TodoList() {
                     )}
                 </div>
             </div>
-            {/* <ul>
-                {taskList.map((task) =>
-                    <>
-                        <li key={task.id} >{task.value}</li>
-                        <button onClick={() => deleteTask(task.id)} >Удалить</button>
-                    </>
-                )}
-            </ul> */}
         </>
-    );
+    )
 }
-export default TodoList;

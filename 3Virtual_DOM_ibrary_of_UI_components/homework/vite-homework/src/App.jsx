@@ -1,6 +1,6 @@
 import './App.css'
 import { TemperatureConverter } from './components/TemperatureConverter/TemperatureConverter'
-import TodoList from './components/TodoList/TodoList '
+import { TodoList } from './components/TodoList/TodoList '
 
 function App() {
   return (
