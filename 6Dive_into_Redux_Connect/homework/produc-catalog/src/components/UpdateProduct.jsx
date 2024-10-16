@@ -1,19 +1,29 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
 import { updateProduct } from "../store/productSlice";
-import { toggleVisibility } from "../store/visibilitySlice";
 
 
 export const UpdateProduct = ({ product }) => {//npm install prop-types
-    const [name, setName] = useState("");
-    const [description, setDescription] = useState("");
-    const [price, setPrice] = useState("");
-    const [available, setAvailable] = useState(true);
+    // const [name, setName] = useState("");
+    // const [description, setDescription] = useState("");
+    // const [price, setPrice] = useState("");
+    // const [available, setAvailable] = useState(true);
 
-    const { visibility } = useSelector((state) => state.visibility);// Селектор для видимости формы
+    // const { visibility } = useSelector((state) => state.visibility);// Селектор для видимости формы
 
+    const [name, setName] = useState(product.name);
+    const [description, setDescription] = useState(product.description);
+    const [price, setPrice] = useState(product.price);
+    const [available, setAvailable] = useState(product.available);
     const dispatch = useDispatch();
+
+    useEffect(() => {
+        setName(product.name);
+        setDescription(product.description);
+        setPrice(product.price);
+        setAvailable(product.available);
+    }, [product]);
 
 
     const handleSubmit = (e) => {
@@ -30,8 +40,7 @@ export const UpdateProduct = ({ product }) => {//npm install prop-types
 
     return (
         <div>
-            <button onClick={() => dispatch(toggleVisibility())}>Edit product</button>
-            <form className={visibility} style={{ visibility: "none" }} onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit}>
                 <p>Edit form</p>
                 <input
                     type="text"

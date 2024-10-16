@@ -33,7 +33,7 @@ const productSlice = createSlice({
         product.available = !product.available;
       }
     },
-
+    
 
   },
 });
