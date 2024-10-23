@@ -1,0 +1,11 @@
+.error-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-text {
+  color: #ccc;
+  font-size: 30px;
+}/*# sourceMappingURL=PathError.css.map */
