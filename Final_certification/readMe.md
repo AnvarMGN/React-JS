@@ -40,3 +40,10 @@ Pixso предлагает мощный набор инструментов дл
 - SASS/SCSS
 npm install -D sass-embedded --- vite
 <!-- npm install node-sass --- create app -->
+
+
+- Material ui
+https://mui.com/material-ui/getting-started/
+
+
+- Fontawesome
