@@ -5,8 +5,8 @@ export const LeftMenu = () => {
         <>
             <aside className="left-menu">
                 <article className="profile">
-                    <figure>
-                        <img className="my-avatar" src="../../../public/images/left-menu/Profile.svg" alt="photo-avatar" />
+                    <figure className="figure-profile">
+                        <img className="my-avatar" src="/images/left-menu/Profile.svg" alt="photo-avatar" />
                         <svg className="svg-available"
                             xmlns="http://www.w3.org/2000/svg"
                             width="36"
@@ -141,13 +141,107 @@ export const LeftMenu = () => {
                     </div>
                 </article>
 
-                <article>
+                <article className="about">
+                    <ul className="about-list">
+                        <li className='about-li'>
+                            <span className="left-text">Age:</span>
+                            <span>35</span>
+                        </li>
+                        <li className='about-li'>
+                            <span className="left-text">Residence:
+                            </span><span>RF</span>
+                        </li>
+                        <li className='about-li'>
+                            <span className="left-text">Freelance:</span>
+                            <span className="right-text-available">Available</span>
+                        </li>
+                        <li className='about-li'>
+                            <span className="left-text">Address:</span>
+                            <span>
+                                Magnitogorsk,
+                                <br></br>
+                                Russian Federation
+                            </span>
+                        </li>
+                    </ul>
                 </article>
 
-            </aside>
-            <div>
+                <article className="languages">
+                    <h4 className="title-languages">Languages</h4>
+                    <ul className="language-list">
+                        <li>
+                            <i className="fa-solid fa-language"></i>
+                            Russian -
+                            <span> native speaker</span>
+                        </li>
+                        <li>
+                            <i className="fa-solid fa-language"></i
+                            >English -
+                            <span> pre-intermediate</span>
+                        </li>
+                        {/* <li>
+                            <i className="fa-solid fa-language"></i>
+                            Tatar -
+                            <span> pre-intermediate</span>
+                        </li> */}
+                    </ul>
+                </article>
 
-            </div>
+                <article className="skills">
+                    <h4 className="title-skills">Skills</h4>
+                    <ul className="skills-list">
+                        <li className='skills-li'>
+                            <i className="fa-brands fa-html5"></i>
+                            <span className="skills-text">Html</span>
+                        </li>
+                        <li className='skills-li'>
+                            <i className="fa-brands fa-css3-alt"></i>
+                            <span className="skills-text">CSS</span>
+                        </li>
+                        <li className='skills-li'>
+                            <i className="fa-brands fa-js"></i>
+                            <span className="skills-text">Js</span>
+                        </li>
+                        <li className='skills-li'>
+                            <i className="fa-brands fa-react"></i>
+                            <span className="skills-text">React</span>
+                        </li>
+                    </ul>
+                </article>
+
+                <article className="extra-skills">
+                    <h4 className="title-extra-skills">Extra skills</h4>
+                    <div className="extra-skills-list">
+
+                        <i className="fa-brands fa-sass"></i>
+                        <span className="extra-skills-text desc1">Sass/Scss</span>
+
+                        <i className="fa-brands fa-node-js"></i>
+                        <span className="extra-skills-text desc2">Node.js - basics</span>
+
+                        <i className="fa-brands fa-react"></i>
+                        <span className="extra-skills-text desc3">Redux</span>
+
+                        <i className="fa-brands fa-github"></i>
+                        <span className="extra-skills-text desc4">GIT Knowledge</span>
+
+                    </div>
+                </article>
+
+                <article className='download-cv'>
+                    <button className='btn-cv'>
+                        DOWNLOAD CV
+                        {/* <svg className='svg-download-cv'
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="11.667"
+                            height="12"
+                            fill="none">
+                            <path fill="#2B2B2B" d="M1.16 10.66h9.34V6h1.16v5.33c0 .18-.06.34-.17.47-.11.12-.26.2-.41.2H.58c-.16 0-.3-.08-.41-.2a.714.714 0 0 1-.17-.47V6h1.16v4.66ZM7 4h2.91L5.83 8.66 1.75 4h2.91V0H7v4Z" />
+                        </svg> */}
+                        <i className="fa-solid fa-download"></i>
+                    </button>
+                </article>
+            </aside>
         </>
     )
 };

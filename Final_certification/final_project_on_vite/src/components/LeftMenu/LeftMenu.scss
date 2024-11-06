@@ -11,6 +11,10 @@
     height: 1315px;
     background-color: $white;
 
+    ul {
+        list-style-type: none;
+    }
+
     .profile {
         display: flex;
         flex-direction: column;
@@ -24,6 +28,12 @@
         border-bottom: 1.5px solid $lightGrayBackground;
 
         position: relative;
+
+        .figure-profile {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
         .my-avatar {
             width: 150px;
@@ -60,7 +70,7 @@
         .social-icons {
             display: flex;
             flex-direction: row;
-            gap: 15px;
+            gap: 14px;
             margin-bottom: 25px;
 
             .icon-link {
@@ -107,6 +117,234 @@
                     top: 4px;
                     color: $black;
                 }
+            }
+        }
+    }
+
+    .about {
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 46px;
+        border-bottom: 1.5px solid $lightGrayBackground;
+
+        .about-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            margin-bottom: 25px;
+
+            color: $black;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+            .about-li {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: baseline;
+
+                .right-text-available {
+                    color: $available;
+                }
+            }
+
+            .left-text {
+                background-color: $yellow;
+                padding-left: 5px;
+                padding-right: 5px;
+            }
+        }
+    }
+
+    .languages {
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 46px;
+        border-bottom: 1.5px solid $lightGrayBackground;
+
+        .title-languages {
+            margin-bottom: 14px;
+
+            font-family: Inter;
+            color: $black;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 123.6%;
+            text-align: left;
+        }
+
+        .language-list {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+
+            margin-bottom: 25px;
+
+            color: $paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: left;
+
+            .fa-language {
+                margin-right: 14px;
+                color: $yellow;
+            }
+        }
+    }
+
+    .skills {
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 46px;
+        border-bottom: 1.5px solid $lightGrayBackground;
+
+        .title-skills {
+            margin-bottom: 14px;
+
+            font-family: Inter;
+            color: $black;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 123.6%;
+            text-align: left;
+        }
+
+        .skills-list {
+            margin-bottom: 25px;
+
+            display: flex;
+            flex-direction: row;
+            gap: 28px;
+
+            color: $paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+
+            .skills-li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+
+                .fa-brands {
+                    font-size: 40px;
+                    color: $yellow;
+                }
+            }
+        }
+    }
+
+    .extra-skills {
+        margin-top: 25px;
+        margin-left: 40px;
+        margin-right: 46px;
+        border-bottom: 1.5px solid $lightGrayBackground;
+
+        .title-extra-skills {
+            margin-bottom: 14px;
+
+            font-family: Inter;
+            color: $black;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 123.6%;
+            text-align: left;
+        }
+
+        .extra-skills-list {
+            margin-bottom: 25px;
+
+            display: grid;
+            grid-template-columns: 20% 50%;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-areas:
+                "icon1 desc1"
+                "icon2 desc2"
+                "icon3 desc3"
+                "icon4 desc4";
+            justify-items: start;
+            align-items: center;
+            gap: 14px;
+
+            .fa-brands {
+                font-size: 30px;
+                color: $yellow;
+            }
+
+            .extra-skills-text {
+                color: $paragraphFont;
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+            }
+
+            .fa-sass {
+                grid-area: icon1;
+            }
+
+            .fa-node-js {
+                grid-area: icon2;
+            }
+
+            .fa-react {
+                grid-area: icon3;
+            }
+
+            .fa-github {
+                grid-area: icon4;
+            }
+
+            .desc1 {
+                grid-area: desc1;
+            }
+
+            .desc2 {
+                grid-area: desc2;
+            }
+
+            .desc3 {
+                grid-area: desc3;
+            }
+
+            .desc4 {
+                grid-area: desc4;
+            }
+        }
+    }
+
+    .download-cv {
+        margin-top: 25px;
+        margin-bottom: 25px;
+        margin-left: 40px;
+        margin-right: 46px;
+
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        .btn-cv {
+            width: 220px;
+            height: 40px;
+            background-color: $yellow;
+
+            color: $black;
+            font-family: Inter;
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 17px;
+
+            border: none;
+
+            .fa-download {
+                margin-left: 20px;
             }
         }
     }

@@ -1,5 +1,7 @@
 -VScode
 
+-NPM 
+
 - npm create vite@latest final_project_on_vite
 √ Select a framework: » React
 √ Select a variant: » JavaScript
@@ -39,7 +41,9 @@ Pixso предлагает мощный набор инструментов дл
 
 - SASS/SCSS
 npm install -D sass-embedded --- vite
-<!-- npm install node-sass --- create app -->
+
+npm i sass-migrator
+npm install -g sass-migrator  -  @import правила для загрузки других файлов с единым глобальным пространством имен
 
 
 - Material ui
