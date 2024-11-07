@@ -1,13 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
-@import url("../../lib/fontawesome/all.min.css");
-@import "../../style/base.scss";
+@use "../../style/base.module.scss";
 
 
 .left-menu {
     width: 305px;
     height: 1315px;
 
-    background-color: $white;
+    background-color: base.$white;
 
     ul {
         list-style-type: none;
@@ -23,7 +21,7 @@
         margin-top: 50px;
         margin-left: 40px;
         margin-right: 46px;
-        border-bottom: 1.5px solid $lightGrayBackground;
+        border-bottom: 1.5px solid base.$lightGrayBackground;
 
         position: relative;
 
@@ -52,7 +50,7 @@
             font-size: 18px;
             font-weight: 500;
             line-height: 123.6%;
-            color: $black;
+            color: base.$black;
         }
 
         .my-profession {
@@ -62,7 +60,7 @@
             font-size: 15px;
             font-weight: 400;
             line-height: 24px;
-            color: $paragraphFont;
+            color: base.$paragraphFont;
         }
 
         .social-icons {
@@ -78,42 +76,42 @@
                     position: absolute;
                     left: 5px;
                     top: 4px;
-                    color: $black;
+                    color: base.$black;
                 }
 
                 .fa-facebook-f {
                     position: absolute;
                     left: 7px;
                     top: 4px;
-                    color: $black;
+                    color: base.$black;
                 }
 
                 .fa-youtube {
                     position: absolute;
                     left: 3px;
                     top: 4px;
-                    color: $black;
+                    color: base.$black;
                 }
 
                 .fa-twitter {
                     position: absolute;
                     left: 4px;
                     top: 4px;
-                    color: $black;
+                    color: base.$black;
                 }
 
                 .fa-instagram {
                     position: absolute;
                     left: 5px;
                     top: 4px;
-                    color: $black;
+                    color: base.$black;
                 }
 
                 .fa-linkedin-in {
                     position: absolute;
                     left: 6px;
                     top: 4px;
-                    color: $black;
+                    color: base.$black;
                 }
             }
         }
@@ -123,7 +121,7 @@
         margin-top: 25px;
         margin-left: 40px;
         margin-right: 46px;
-        border-bottom: 1.5px solid $lightGrayBackground;
+        border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .about-list {
             display: flex;
@@ -132,7 +130,7 @@
 
             margin-bottom: 25px;
 
-            color: $black;
+            color: base.$black;
             font-family: Inter;
             font-size: 15px;
             font-weight: 400;
@@ -145,12 +143,12 @@
                 align-items: baseline;
 
                 .right-text-available {
-                    color: $available;
+                    color: base.$available;
                 }
             }
 
             .left-text {
-                background-color: $yellow;
+                background-color: base.$yellow;
                 padding-left: 5px;
                 padding-right: 5px;
             }
@@ -161,13 +159,13 @@
         margin-top: 25px;
         margin-left: 40px;
         margin-right: 46px;
-        border-bottom: 1.5px solid $lightGrayBackground;
+        border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .title-languages {
             margin-bottom: 14px;
 
             font-family: Inter;
-            color: $black;
+            color: base.$black;
             font-size: 18px;
             font-weight: 500;
             line-height: 123.6%;
@@ -181,7 +179,7 @@
 
             margin-bottom: 25px;
 
-            color: $paragraphFont;
+            color: base.$paragraphFont;
             font-family: Inter;
             font-size: 15px;
             font-weight: 400;
@@ -190,7 +188,7 @@
 
             .fa-language {
                 margin-right: 14px;
-                color: $yellow;
+                color: base.$yellow;
             }
         }
     }
@@ -199,13 +197,13 @@
         margin-top: 25px;
         margin-left: 40px;
         margin-right: 46px;
-        border-bottom: 1.5px solid $lightGrayBackground;
+        border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .title-skills {
             margin-bottom: 14px;
 
             font-family: Inter;
-            color: $black;
+            color: base.$black;
             font-size: 18px;
             font-weight: 500;
             line-height: 123.6%;
@@ -219,7 +217,7 @@
             flex-direction: row;
             gap: 28px;
 
-            color: $paragraphFont;
+            color: base.$paragraphFont;
             font-family: Inter;
             font-size: 15px;
             font-weight: 400;
@@ -233,7 +231,7 @@
 
                 .fa-brands {
                     font-size: 40px;
-                    color: $yellow;
+                    color: base.$yellow;
                 }
             }
         }
@@ -243,13 +241,13 @@
         margin-top: 25px;
         margin-left: 40px;
         margin-right: 46px;
-        border-bottom: 1.5px solid $lightGrayBackground;
+        border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .title-extra-skills {
             margin-bottom: 14px;
 
             font-family: Inter;
-            color: $black;
+            color: base.$black;
             font-size: 18px;
             font-weight: 500;
             line-height: 123.6%;
@@ -306,11 +304,11 @@
 
             .fa-brands {
                 font-size: 30px;
-                color: $yellow;
+                color: base.$yellow;
             }
 
             .extra-skills-text {
-                color: $paragraphFont;
+                color: base.$paragraphFont;
                 font-family: Inter;
                 font-size: 15px;
                 font-weight: 400;
@@ -333,9 +331,9 @@
         .btn-cv {
             width: 220px;
             height: 40px;
-            background-color: $yellow;
+            background-color: base.$yellow;
 
-            color: $black;
+            color: base.$black;
             font-family: Inter;
             font-size: 14px;
             font-weight: 600;

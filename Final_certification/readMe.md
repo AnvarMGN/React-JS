@@ -1,6 +1,6 @@
--VScode
+- VScode
 
--NPM 
+- NPM 
 
 - npm create vite@latest final_project_on_vite
 √ Select a framework: » React
@@ -51,3 +51,4 @@ https://mui.com/material-ui/getting-started/
 
 
 - Fontawesome
+npm i @fortawesome/react-fontawesome
