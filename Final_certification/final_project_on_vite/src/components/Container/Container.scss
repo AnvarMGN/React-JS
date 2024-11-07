@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("../../lib/fontawesome/all.min.css");
+@import "../../style/base.scss";
+
+.container{
+    
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-between;
+    // gap: 28px;
+
+    display: grid;
+    grid-template-columns: 305px 1fr 108px;
+    gap: 28px;
+
+    background-color: $lightGrayBackground;
+}

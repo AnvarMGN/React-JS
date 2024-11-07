@@ -4,11 +4,9 @@
 
 
 .left-menu {
-    position: absolute;
-    left: 0;
-    top: 0;
     width: 305px;
     height: 1315px;
+
     background-color: $white;
 
     ul {
@@ -264,14 +262,47 @@
             display: grid;
             grid-template-columns: 20% 50%;
             grid-template-rows: repeat(4, 1fr);
-            grid-template-areas:
-                "icon1 desc1"
-                "icon2 desc2"
-                "icon3 desc3"
-                "icon4 desc4";
             justify-items: start;
             align-items: center;
             gap: 14px;
+
+            // grid-template-areas:
+            //     "icon1 desc1"
+            //     "icon2 desc2"
+            //     "icon3 desc3"
+            //     "icon4 desc4";
+
+            // .fa-sass {
+            //     grid-area: icon1;
+            // }
+
+            // .fa-node-js {
+            //     grid-area: icon2;
+            // }
+
+            // .fa-react {
+            //     grid-area: icon3;
+            // }
+
+            // .fa-github {
+            //     grid-area: icon4;
+            // }
+
+            // .desc1 {
+            //     grid-area: desc1;
+            // }
+
+            // .desc2 {
+            //     grid-area: desc2;
+            // }
+
+            // .desc3 {
+            //     grid-area: desc3;
+            // }
+
+            // .desc4 {
+            //     grid-area: desc4;
+            // }
 
             .fa-brands {
                 font-size: 30px;
@@ -286,37 +317,6 @@
                 line-height: 24px;
             }
 
-            .fa-sass {
-                grid-area: icon1;
-            }
-
-            .fa-node-js {
-                grid-area: icon2;
-            }
-
-            .fa-react {
-                grid-area: icon3;
-            }
-
-            .fa-github {
-                grid-area: icon4;
-            }
-
-            .desc1 {
-                grid-area: desc1;
-            }
-
-            .desc2 {
-                grid-area: desc2;
-            }
-
-            .desc3 {
-                grid-area: desc3;
-            }
-
-            .desc4 {
-                grid-area: desc4;
-            }
         }
     }
 

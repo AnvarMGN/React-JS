@@ -1,11 +1,13 @@
+
+import { Container } from './components/Container/Container';
 import './style/App.scss';
-import { LeftMenu } from './components/LeftMenu/leftMenu';
+
 
 function App() {
 
   return (
     <>
-      <LeftMenu />
+      <Container />
     </>
   )
 }

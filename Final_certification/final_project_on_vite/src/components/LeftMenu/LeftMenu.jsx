@@ -1,9 +1,9 @@
-import './LeftMenu.scss'
+import './LeftMenu.scss';
 
 export const LeftMenu = () => {
     return (
         <>
-            <aside className="left-menu">
+        <aside className="left-menu">
                 <article className="profile">
                     <figure className="figure-profile">
                         <img className="my-avatar" src="/images/left-menu/Profile.svg" alt="photo-avatar" />
@@ -175,8 +175,8 @@ export const LeftMenu = () => {
                             <span> native speaker</span>
                         </li>
                         <li>
-                            <i className="fa-solid fa-language"></i
-                            >English -
+                            <i className="fa-solid fa-language"></i>
+                            English -
                             <span> pre-intermediate</span>
                         </li>
                         {/* <li>
