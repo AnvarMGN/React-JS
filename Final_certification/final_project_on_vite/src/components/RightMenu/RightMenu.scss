@@ -3,7 +3,116 @@
 .right-menu {
     width: 108px;
     height: 1315px;
-   
+
     box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
     background: base.$white;
+
+    .contrast {
+        display: flex;
+        justify-content: center;
+
+        padding-top: 50px;
+        padding-bottom: 215px;
+    }
+
+    .nav-link {
+        display: flex;
+        flex-direction: column;
+        gap:25px;
+
+        .nav-link-block {
+            position: relative;
+
+            .icon-nav-link {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+
+                position: relative;
+
+                .fa-solid {
+                    position: absolute;
+                    top: 10px;
+                    left: 44px;
+
+                    font-size: 18px;
+                    color: base.$paragraphFont;
+                }
+
+                .svg-circle {
+                    fill: base.$grayBackground;
+                }
+
+                .fa-file-code {
+                    margin-left: 3px;
+                }
+
+                .fa-user-graduate {
+                    margin-left: 2px;
+                }
+
+            }
+
+            .comeup {
+                top: -82px;
+                left: 0px;
+
+                display: flex;
+                justify-content: center;
+
+                position: relative;
+
+                opacity: 0;
+                visibility: hidden;
+
+                .comeup-title {
+                    box-sizing: border-box;
+
+                    color: base.$white;
+                    font-family: Inter;
+                    font-size: 12px;
+                    font-weight: 500;
+                    line-height: 15px;
+
+                    text-align: center;
+                    padding-top: 4px;
+
+                    width: 65px;
+                    height: 24px;
+
+                    background-color: base.$black;
+                }
+
+                .comeup-svg {
+                    position: absolute;
+                    top: 20px;
+                    left: 46px;
+                }
+            }
+
+        }
+
+        .nav-link-block:hover {
+            .comeup {
+                transition: opacity 0.8s, visibility 0.5s;
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .fa-solid {
+                transition: color 0.5s;
+                color: base.$black;
+            }
+
+            .svg-circle {
+                transition: fil 0.5s;
+                fill: base.$yellow;
+            }
+
+            .icon-nav-link{
+                transition: transform 0.5s;
+                transform: scale(130%);
+            }
+        }
+    }
 }

@@ -3,7 +3,14 @@
 @import url("../../lib/fontawesome/all.min.css");
 
 .container{
-    
+    ul {
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
     // display: flex;
     // flex-direction: row;
     // justify-content: space-between;

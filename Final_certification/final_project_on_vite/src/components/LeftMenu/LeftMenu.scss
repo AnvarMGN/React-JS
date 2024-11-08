@@ -7,10 +7,6 @@
 
     background-color: base.$white;
 
-    ul {
-        list-style-type: none;
-    }
-
     .profile {
         display: flex;
         flex-direction: column;
@@ -113,6 +109,12 @@
                     top: 4px;
                     color: base.$black;
                 }
+            }
+
+            .icon-link:hover {
+                transition: transform 1s;
+                transform: rotate(360deg);
+
             }
         }
     }
@@ -329,6 +331,9 @@
         justify-content: center;
 
         .btn-cv {
+            border: none;
+            outline: none;
+
             width: 220px;
             height: 40px;
             background-color: base.$yellow;
@@ -339,10 +344,22 @@
             font-weight: 600;
             line-height: 17px;
 
-            border: none;
+            // .fa-download {
+            //     margin-left: 20px;
+            // }
 
-            .fa-download {
+            .svg-download-cv {
                 margin-left: 20px;
+            }
+        }
+
+        .btn-cv:hover {
+            transition: color 0.5s;
+            color: base.$white;
+
+            .svg-download-cv path {
+                transition: fill 0.5s;
+                fill: base.$white;
             }
         }
     }
