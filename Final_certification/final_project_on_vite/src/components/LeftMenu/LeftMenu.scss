@@ -2,17 +2,24 @@
 
 
 .left-menu {
-    width: 305px;
-    height: 1315px;
+    width: 320px;
+    height: 100%;
+
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    // overflow-y: auto;
 
     background-color: base.$white;
 
     .profile {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-
-        width: 220px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        gap: 10px;
 
         margin-top: 50px;
         margin-left: 40px;
@@ -21,43 +28,47 @@
 
         position: relative;
 
-        .figure-profile {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+        // .figure-profile {
+        //     display: flex;
+        //     flex-direction: column;
+        //     align-items: center;
+        // }
 
-        .my-avatar {
-            width: 150px;
-            height: 150px;
-            margin-bottom: 30px;
-        }
+        // .my-avatar {
+        //     width: 150px;
+        //     height: 150px;
+        //     margin-bottom: 30px;
+        // }
 
-        .svg-available {
-            position: absolute;
-            left: 150px;
-            top: 110px;
-        }
+        // .svg-available {
+        //     position: absolute;
+        //     left: 150px;
+        //     top: 110px;
+        // }
 
         .my-name {
             margin-bottom: 15px;
 
             font-family: Inter;
-            font-size: 18px;
-            font-weight: 500;
+            font-size: 32px;
+            font-weight: 700;
             line-height: 123.6%;
             color: base.$black;
         }
 
-        .my-profession {
-            margin-bottom: 15px;
-
-            font-family: Inter;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 24px;
-            color: base.$paragraphFont;
+        .fa-id-card {
+            font-size: 32px;
         }
+
+        // .my-profession {
+        //     margin-bottom: 15px;
+
+        //     font-family: Inter;
+        //     font-size: 15px;
+        //     font-weight: 400;
+        //     line-height: 24px;
+        //     color: base.$paragraphFont;
+        // }
 
         .social-icons {
             display: flex;
@@ -257,14 +268,12 @@
         }
 
         .extra-skills-list {
-            margin-bottom: 25px;
-
-            display: grid;
-            grid-template-columns: 20% 50%;
-            grid-template-rows: repeat(4, 1fr);
-            justify-items: start;
-            align-items: center;
-            gap: 14px;
+            // display: grid;
+            // grid-template-columns: 20% 50%;
+            // grid-template-rows: repeat(4, 1fr);
+            // justify-items: start;
+            // align-items: center;
+            // gap: 14px;
 
             // grid-template-areas:
             //     "icon1 desc1"
@@ -303,6 +312,19 @@
             // .desc4 {
             //     grid-area: desc4;
             // }
+
+            margin-bottom: 25px;
+
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+            .extra-skills-li {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+            }
 
             .fa-brands {
                 font-size: 30px;

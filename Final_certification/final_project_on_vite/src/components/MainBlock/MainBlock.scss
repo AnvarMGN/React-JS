@@ -1,24 +1,20 @@
 @use "../../style/base.module.scss";
 
 .main-container {
-    width: 100%;
-    height: 467px;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: space-between;
-    gap: 70px;
+    margin-left: 20.5%;
+    margin-right: 8%;
 
     .main-about {
+        position: relative;
+
         height: 467px;
+        margin-bottom: 130px;
+        background-color: base.$white;
+
         display: flex;
         flex-direction: row;
         justify-content: space-around;
 
-        background-color: base.$white;
-
-        position: relative;
 
         .main-about-block {
             margin-top: 93px;
@@ -62,7 +58,8 @@
                 .fa-arrow-right {
                     margin-left: 12px;
                 }
-                &:hover{
+
+                &:hover {
                     transition: color 0.5s;
                     color: base.$white;
                 }
@@ -120,6 +117,183 @@
 
 
 
+    }
+
+    .main-services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+
+        .main-services-title {
+            color: base.$black;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 123.6%;
+
+            margin-bottom: 25px;
+        }
+
+        .main-services-text {
+            width: 438px;
+            color: base.$paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .main-services-cart {
+            position: relative;
+            box-sizing: border-box;
+            background-color: base.$white;
+
+            width: 310px;
+            height: 225px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .services-cart-svg {
+                margin-top: 35px;
+                margin-bottom: 35px;
+            }
+
+            .fa-code {
+                position: absolute;
+                top: 48px;
+                left: 145px;
+
+                color: base.$yellow;
+            }
+
+            .services-cart-title {
+                color: base.$black;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 500;
+                line-height: 123.6%;
+
+                margin-bottom: 15px;
+            }
+
+            .services-cart-text {
+                color: base.$paragraphFont;
+                font-family: Inter;
+                font-size: 15px;
+                font-weight: 400;
+                line-height: 24px;
+
+                margin-bottom: 42px;
+            }
+        }
+
+    }
+
+    .main-education {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 70px;
+
+        .main-education-title {
+            color: base.$black;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 123.6%;
+
+            margin-bottom: 25px;
+        }
+
+        .main-education-text {
+            width: 35%;
+            color: base.$paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        .main-education-box {
+            padding-top: 50px;
+            padding-left: 36px;
+            padding-bottom: 30px;
+            padding-right: 50px;
+            background-color: base.$white;
+
+
+            .main-education-block {
+                display: flex;
+                flex-direction: row;
+
+                border-bottom: 1.5px solid base.$lightGrayBackground;
+                padding-bottom: 12px;
+
+                .education-block-date {
+                    width: 60%;
+                    display: flex;
+                    flex-direction: column;
+
+                    .education-block-date-title {
+                        margin-bottom: 28px;
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 123.6%;
+                    }
+
+                    .education-block-date-text {
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
+                    .education-block-date-text-span {
+                        margin-left: 10px;
+                        padding: 4px 8px 4px 8px;
+
+                        background-color: base.$yellow;
+                    }
+                }
+
+                .education-block-certificate {
+                    width: 80%;
+                    display: flex;
+                    flex-direction: column;
+                    // margin-left: 180px;
+
+                    .education-block-certificate-title {
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 123.6%;
+
+                        margin-bottom: 28px;
+                    }
+
+                    .education-block-certificate-text {
+                        color: base.$black;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
     }
 
     .footer {

@@ -67,6 +67,7 @@ export const RightMenu = () => {
                                 fill="none">
                                 <path fill="#2B2B2B" fillRule="evenodd" d="M7.79 13.5 15.58 0H0l7.79 13.5Z" />
                             </svg>
+                            {/* <i className="fa-solid fa-caret-down"></i> */}
                             
                         </div>
 

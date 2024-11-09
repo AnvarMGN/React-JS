@@ -3,9 +3,13 @@ import './LeftMenu.scss';
 export const LeftMenu = () => {
     return (
         <>
-        <aside className="left-menu">
+            <aside className="left-menu">
                 <article className="profile">
-                    <figure className="figure-profile">
+
+                    <h3 className="my-name">Profile</h3>
+                    <i className="fa-solid fa-id-card"></i>
+
+                    {/* <figure className="figure-profile">
                         <img className="my-avatar" src="/images/left-menu/Profile.svg" alt="photo-avatar" />
                         <svg className="svg-available"
                             xmlns="http://www.w3.org/2000/svg"
@@ -51,9 +55,9 @@ export const LeftMenu = () => {
                         </svg>
                         <figcaption className="my-name">Анвар Акчалов</figcaption>
                         <figcaption className="my-profession">Frontend Developer</figcaption>
-                    </figure>
+                    </figure> */}
 
-                    <div className="social-icons">
+                    {/* <div className="social-icons">
                         <a className='icon-link' href="https://vk.com/">
                             <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -138,7 +142,8 @@ export const LeftMenu = () => {
                             </svg>
                             <i className="fab fa-brands fa-linkedin-in"></i>
                         </a>
-                    </div>
+                    </div> */}
+
                 </article>
 
                 <article className="about">
@@ -151,10 +156,10 @@ export const LeftMenu = () => {
                             <span className="left-text">Residence:
                             </span><span>RF</span>
                         </li>
-                        <li className='about-li'>
+                        {/* <li className='about-li'>
                             <span className="left-text">Freelance:</span>
                             <span className="right-text-available">Available</span>
-                        </li>
+                        </li> */}
                         <li className='about-li'>
                             <span className="left-text">Address:</span>
                             <span>
@@ -210,10 +215,26 @@ export const LeftMenu = () => {
                 </article>
 
                 <article className="extra-skills">
-                    <h4 className="title-extra-skills">Extra skills</h4>
-                    <div className="extra-skills-list">
+                    <h4 className="title-extra-skills">Extra Skills</h4>
+                    <ul className="extra-skills-list">
+                        <li className="extra-skills-li">
+                            <i className="fa-brands fa-sass"></i>
+                            <span className="extra-skills-text">SASS</span>
+                        </li>
+                        <li className="extra-skills-li">
+                            <i className="fa-brands fa-node-js"></i>
+                            <span className="extra-skills-text">Node.js</span>
+                        </li>
+                        <li className="extra-skills-li">
+                            <i className="fa-brands fa-github"></i>
+                            <span className="extra-skills-text">GIT</span>
+                        </li>
+                        <li className="extra-skills-li">
+                            <i className="fa-brands fa-react"></i>
+                            <span className="extra-skills-text">Redux</span>
+                        </li>
 
-                        <i className="fa-brands fa-sass"></i>
+                        {/* <i className="fa-brands fa-sass"></i>
                         <span className="extra-skills-text desc1">Sass/Scss</span>
 
                         <i className="fa-brands fa-node-js"></i>
@@ -223,9 +244,8 @@ export const LeftMenu = () => {
                         <span className="extra-skills-text desc3">Redux</span>
 
                         <i className="fa-brands fa-github"></i>
-                        <span className="extra-skills-text desc4">GIT Knowledge</span>
-
-                    </div>
+                        <span className="extra-skills-text desc4">GIT Knowledge</span> */}
+                    </ul>
                 </article>
 
                 <article className="download-cv">

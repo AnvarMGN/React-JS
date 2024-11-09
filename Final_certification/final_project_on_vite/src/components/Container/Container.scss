@@ -11,14 +11,6 @@
         text-decoration: none;
     }
 
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: space-between;
-    // gap: 28px;
-
-    display: grid;
-    grid-template-columns: 305px 1fr 108px;
-    gap: 28px;
-
     background-color: base.$lightGrayBackground;
+
 }

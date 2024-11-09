@@ -2,9 +2,15 @@
 
 .right-menu {
     width: 108px;
-    height: 1315px;
+    height: 100%;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    // overflow-y: auto;
 
     box-shadow: 4px 0px 10px 0px rgba(47, 122, 249, 0.1);
+
     background: base.$white;
 
     .contrast {
@@ -12,7 +18,7 @@
         justify-content: center;
 
         padding-top: 50px;
-        padding-bottom: 215px;
+        padding-bottom: 200px;
     }
 
     .nav-link {
@@ -111,7 +117,7 @@
 
             .icon-nav-link{
                 transition: transform 0.5s;
-                transform: scale(130%);
+                // transform: scale(130%);
             }
         }
     }
