@@ -4,6 +4,7 @@ export const MainBlock = () => {
   return (
     <>
       <section className="main-container">
+
         <div className="main-about">
 
           <article className="main-about-block">
@@ -120,8 +121,8 @@ export const MainBlock = () => {
           <h2 className="main-services-title">My Services</h2>
           <p className="main-services-text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam commodi! Quia itaque laborum maiores sint libero illo fugit eius.</p>
-          <article className="main-services-cart">
-            <svg className="services-cart-svg"
+          <article className="main-services-card">
+            <svg className="services-card-svg"
               xmlns="http://www.w3.org/2000/svg"
               width="65.875"
               height="53.125"
@@ -131,8 +132,24 @@ export const MainBlock = () => {
                 d="M62.15 0H3.71c-.98 0-1.93.39-2.62 1.09C.39 1.78 0 2.73 0 3.71V40.9c0 .99.39 1.93 1.09 2.63.69.7 1.64 1.09 2.62 1.09h21.28l-1.28 3.19h-5.65A1.06 1.06 0 0 0 17 48.87V51h-6.38a1.06 1.06 0 1 0 0 2.12h44.63a1.06 1.06 0 1 0 0-2.12h-6.38v-2.13a1.06 1.06 0 0 0-1.06-1.06h-5.66l-1.27-3.19h21.27c.99 0 1.93-.39 2.63-1.09.7-.7 1.09-1.64 1.09-2.63V3.71c0-.98-.39-1.93-1.09-2.62C64.08.39 63.14 0 62.15 0Zm-15.4 49.93V51H19.12v-1.07h27.63ZM26 47.81l1.28-3.19h11.31l1.27 3.19H26Zm37.75-6.91c-.01.42-.17.83-.47 1.13-.3.3-.71.46-1.13.47H3.71c-.42-.01-.82-.17-1.12-.47-.3-.3-.47-.71-.47-1.13v-2.65h61.63v2.65Zm0-4.78H2.12V3.71c0-.42.17-.82.47-1.12.3-.3.7-.47 1.12-.47h58.44c.42 0 .83.17 1.13.47.3.3.46.7.47 1.12v32.41Z" />
             </svg>
             <i className="fa-solid fa-code"></i>
-            <h5 className="services-cart-title">Web Development</h5>
-            <p className="services-cart-text">Web Site, Advertising</p>
+            <h5 className="services-card-title">Web Development</h5>
+            <p className="services-card-text">Web Site, Advertising</p>
+          </article>
+        </section>
+
+        <section className="main-portfolio">
+          <h2 className="main-portfolio-title">Portfolio</h2>
+          <p className="main-portfolio-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam commodi! Quia itaque laborum maiores sint libero illo fugit eius.</p>
+
+          <article className="main-portfolio-card">
+            <a className="main-portfolio-link" href="#">
+              <img className="portfolio-img" src="images/main-portfolio/template_project.png" alt="template project" />
+            </a>
+            <article className="portfolio-desc">
+              <h5 className="portfolio-card-title">Web Store</h5>
+              <p className="portfolio-card-text">Description of the store.</p>
+            </article>
           </article>
         </section>
 
@@ -165,6 +182,101 @@ export const MainBlock = () => {
 
           </div>
         </section>
+
+        <section className="contact">
+          <article className="contact-leaveform">
+
+            <h2 className="contact-leaveform-title" > Leave Your Info</h2>
+            <form className="contact-leaveform-box">
+              <div className="contact-leaveform-block">
+                <label htmlFor="firstName">Your Full Name (Required)</label>
+                <input className="contact-leaveform-input" type="text" />
+              </div>
+
+              <div className="contact-leaveform-block">
+                <label htmlFor="firstName">Your Email (Required)</label>
+                <input className="contact-leaveform-input" type="text" />
+              </div>
+
+              <div className="contact-leaveform-block">
+                <label htmlFor="firstName">Subject</label>
+                <input className="contact-leaveform-input" type="text" />
+              </div>
+
+              <div className="contact-leaveform-block">
+                <label htmlFor="firstName">Your Message</label>
+                <textarea className="contact-leaveform-input-mess" type="text" name="" id=""></textarea>
+                {/* <input className="contact-leaveform-input-mess" type="text" /> */}
+              </div>
+
+              <button className="contact-leaveform-btn" type="submit">SEND MESSAGE</button>
+            </form>
+
+          </article>
+
+          <article className="contact-information">
+            <h2 className="contact-information-title">Contact Information</h2>
+            <article className="contact-information-box">
+              <div className="contact-information-block">
+                <i className="fa-regular fa-map"></i>
+                <svg className="contact-information-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="">
+                  <circle
+                    className="svg-circle"
+                    cx="20"
+                    cy="20"
+                    r="20"
+                    fill="#FFB400" />
+                </svg>
+              </div>
+
+              <div className="contact-information-grid">
+                <p className="contact-information-grid-title">Country:</p>
+                <p className="contact-information-grid-text">Russian Federation</p>
+
+                <p className="contact-information-grid-title">City:</p>
+                <p className="contact-information-grid-text">Magnitogorsk</p>
+
+                <p className="contact-information-grid-title">Streat:</p>
+                <p className="contact-information-grid-text">Lenin Avenue 12</p>
+              </div>
+            </article>
+
+            <article className="contact-information-box">
+              <div className="contact-information-block">
+                <i className="fa-regular fa-envelope"></i>
+                <svg className="contact-information-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="">
+                  <circle
+                    className="svg-circle"
+                    cx="20"
+                    cy="20"
+                    r="20"
+                    fill="#FFB400" />
+                </svg>
+              </div>
+
+              <div className="contact-information-grid">
+                <p className="contact-information-grid-title">Email:</p>
+                <p className="contact-information-grid-text">akchalov.a.m@yandex.ru</p>
+
+                <p className="contact-information-grid-title">Skype:</p>
+                <p className="contact-information-grid-text">Anvar Akchalov</p>
+
+                <p className="contact-information-grid-title">Telegram:</p>
+                <p className="contact-information-grid-text">Anvar Akchalov</p>
+              </div>
+            </article>
+          </article>
+        </section>
+
+        {/* <section className="map"></section> */}
 
         <footer className="footer">
           <p>2024 All Rights Reserved. Anvar Akchalov</p>

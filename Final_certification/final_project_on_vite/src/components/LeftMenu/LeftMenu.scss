@@ -1,9 +1,12 @@
 @use "../../style/base.module.scss";
 
-
 .left-menu {
-    width: 320px;
+    box-sizing: border-box;
+    width: 306px;
     height: 100%;
+    
+    padding-left: 40px;
+    padding-right: 40px;
 
     position: fixed;
     z-index: 1;
@@ -22,8 +25,8 @@
         gap: 10px;
 
         margin-top: 50px;
-        margin-left: 40px;
-        margin-right: 46px;
+        // margin-left: 40px;
+        // margin-right: 46px;
         border-bottom: 1.5px solid base.$lightGrayBackground;
 
         position: relative;
@@ -132,8 +135,8 @@
 
     .about {
         margin-top: 25px;
-        margin-left: 40px;
-        margin-right: 46px;
+        // margin-left: 40px;
+        // margin-right: 46px;
         border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .about-list {
@@ -170,8 +173,8 @@
 
     .languages {
         margin-top: 25px;
-        margin-left: 40px;
-        margin-right: 46px;
+        // margin-left: 40px;
+        // margin-right: 46px;
         border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .title-languages {
@@ -208,8 +211,8 @@
 
     .skills {
         margin-top: 25px;
-        margin-left: 40px;
-        margin-right: 46px;
+        // margin-left: 40px;
+        // margin-right: 46px;
         border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .title-skills {
@@ -252,8 +255,8 @@
 
     .extra-skills {
         margin-top: 25px;
-        margin-left: 40px;
-        margin-right: 46px;
+        // margin-left: 40px;
+        // margin-right: 46px;
         border-bottom: 1.5px solid base.$lightGrayBackground;
 
         .title-extra-skills {
@@ -345,8 +348,8 @@
     .download-cv {
         margin-top: 25px;
         margin-bottom: 25px;
-        margin-left: 40px;
-        margin-right: 46px;
+        // margin-left: 40px;
+        // margin-right: 46px;
 
         display: flex;
         flex-wrap: nowrap;

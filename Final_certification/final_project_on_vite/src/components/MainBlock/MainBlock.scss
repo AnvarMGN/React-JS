@@ -1,8 +1,6 @@
 @use "../../style/base.module.scss";
 
 .main-container {
-    margin-left: 20.5%;
-    margin-right: 8%;
 
     .main-about {
         position: relative;
@@ -136,7 +134,7 @@
         }
 
         .main-services-text {
-            width: 438px;
+            width: 50%;
             color: base.$paragraphFont;
             font-family: Inter;
             font-size: 15px;
@@ -147,7 +145,7 @@
             margin-bottom: 50px;
         }
 
-        .main-services-cart {
+        .main-services-card {
             position: relative;
             box-sizing: border-box;
             background-color: base.$white;
@@ -159,7 +157,7 @@
             flex-direction: column;
             align-items: center;
 
-            .services-cart-svg {
+            .services-card-svg {
                 margin-top: 35px;
                 margin-bottom: 35px;
             }
@@ -172,7 +170,7 @@
                 color: base.$yellow;
             }
 
-            .services-cart-title {
+            .services-card-title {
                 color: base.$black;
                 font-family: Inter;
                 font-size: 18px;
@@ -182,7 +180,7 @@
                 margin-bottom: 15px;
             }
 
-            .services-cart-text {
+            .services-card-text {
                 color: base.$paragraphFont;
                 font-family: Inter;
                 font-size: 15px;
@@ -212,7 +210,7 @@
         }
 
         .main-education-text {
-            width: 35%;
+            width: 50%;
             color: base.$paragraphFont;
             font-family: Inter;
             font-size: 15px;
@@ -291,6 +289,230 @@
                         font-weight: 400;
                         line-height: 24px;
                     }
+                }
+            }
+        }
+    }
+
+    .main-portfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        margin-bottom: 70px;
+
+        &-title {
+            color: base.$black;
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 123.6%;
+
+            margin-bottom: 25px;
+        }
+
+        &-text {
+            width: 50%;
+            color: base.$paragraphFont;
+            font-family: Inter;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 24px;
+            text-align: center;
+
+            margin-bottom: 50px;
+        }
+
+        &-card {
+
+            display: flex;
+            flex-direction: row;
+            background-color: base.$white;
+
+            .main-portfolio-link {
+                text-decoration: none;
+            }
+
+            .portfolio-img {
+                vertical-align: middle;
+                width: 310px;
+                height: 300px;
+            }
+
+            .portfolio-desc {
+                padding: 20px 40px;
+
+                .portfolio-card-title {
+                    color: base.$black;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 123.6%;
+
+                    margin-bottom: 15px;
+                }
+
+                .portfolio-card-text {
+                    color: base.$black;
+                    font-family: Inter;
+                    font-size: 15px;
+                    font-weight: 400;
+                    line-height: 24px;
+
+                    margin-bottom: 42px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+
+        margin-bottom: 70px;
+
+        .contact-leaveform {
+            margin-right: 30px;
+
+            .contact-leaveform-title {
+                color: base.$black;
+                font-family: Inter;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 123.6%;
+
+                margin-bottom: 50px;
+            }
+
+            .contact-leaveform-box {
+                padding: 25px;
+                background-color: base.$white;
+
+                .contact-leaveform-block {
+                    display: flex;
+                    flex-direction: column;
+
+                    color: base.$paragraphFont;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 123.6%;
+
+                    .contact-leaveform-input {
+                        width: 521px;
+                        height: 50px;
+
+                        margin-top: 8px;
+                        margin-bottom: 25px;
+
+                        background-color: base.$lightGrayBackground;
+
+                        border: none;
+
+                        font-size: 18px;
+
+                        &-mess {
+                            width: 521px;
+                            height: 210px;
+
+                            margin-top: 8px;
+                            margin-bottom: 25px;
+
+                            background-color: base.$lightGrayBackground;
+
+                            border: none;
+
+                            font-size: 18px;
+
+                        }
+                    }
+                }
+
+                .contact-leaveform-btn {
+                    border: none;
+                    outline: none;
+
+                    width: 160px;
+                    height: 35px;
+
+                    background-color: base.$yellow;
+
+                    color: base.$black;
+                    font-family: Inter;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 17px;
+
+                    &:hover {
+                        transition: color 0.5s;
+                        color: base.$white;
+                    }
+                }
+            }
+
+        }
+
+        .contact-information {
+
+            .contact-information-title {
+                color: base.$black;
+                font-family: Inter;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 123.6%;
+
+                margin-bottom: 50px;
+            }
+
+            .contact-information-box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                padding: 25px;
+                background-color: base.$white;
+                margin-bottom: 18px;
+
+                .contact-information-block {
+                    position: relative;
+
+                    .fa-regular {
+                        position: absolute;
+                        top: 10px;
+                        left: 12px;
+
+                    }
+
+                    // .contact-information-svg{
+
+                    // }
+                }
+
+                .contact-information-grid {
+                    margin-top: 30px;
+
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-template-rows: repeat(3, 1fr);
+                    align-items: center;
+                    gap: 14px;
+
+                    .contact-information-grid-title {
+                        color: base.$paragraphFont;
+                        font-family: Inter;
+                        font-size: 18px;
+                        font-weight: 500;
+                        line-height: 123.6%;
+                    }
+
+                    .contact-information-grid-text {
+                        color: base.$paragraphFont;
+                        font-family: Inter;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 24px;
+                    }
+
                 }
             }
         }

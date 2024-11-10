@@ -219,11 +219,17 @@ export const LeftMenu = () => {
                     <ul className="extra-skills-list">
                         <li className="extra-skills-li">
                             <i className="fa-brands fa-sass"></i>
-                            <span className="extra-skills-text">SASS</span>
+                            <span className="extra-skills-text">SASS/
+                                <br />
+                                SCSS
+                            </span>
                         </li>
                         <li className="extra-skills-li">
                             <i className="fa-brands fa-node-js"></i>
-                            <span className="extra-skills-text">Node.js</span>
+                            <span className="extra-skills-text">Node.js
+                                <br />
+                                basics
+                            </span>
                         </li>
                         <li className="extra-skills-li">
                             <i className="fa-brands fa-github"></i>
