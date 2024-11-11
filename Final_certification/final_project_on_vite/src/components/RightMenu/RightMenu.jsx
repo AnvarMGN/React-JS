@@ -3,7 +3,7 @@ import './RightMenu.scss'
 export const RightMenu = () => {
     return (
         <>
-            <aside className="right-menu">
+            <aside className="right-menu slide-in-right">
                 <div className="contrast">
                     <svg className="svg-contrast"
                         xmlns="http://www.w3.org/2000/svg"
@@ -39,9 +39,9 @@ export const RightMenu = () => {
 
                     <div className="nav-link-block">
 
-                        <a className='icon-nav-link' href="#">
-                             <i className="fa-solid fa-house"></i>
-                             <svg className="svg-icon"
+                        <a className='icon-nav-link' href="#home">
+                            <i className="fa-solid fa-house"></i>
+                            <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="40"
                                 height="40"
@@ -68,16 +68,16 @@ export const RightMenu = () => {
                                 <path fill="#2B2B2B" fillRule="evenodd" d="M7.79 13.5 15.58 0H0l7.79 13.5Z" />
                             </svg>
                             {/* <i className="fa-solid fa-caret-down"></i> */}
-                            
+
                         </div>
 
                     </div>
 
                     <div className="nav-link-block">
 
-                        <a className='icon-nav-link' href="#">
-                             <i className="fa-solid fa-file-code"></i>
-                             <svg className="svg-icon"
+                        <a className='icon-nav-link' href="#services">
+                            <i className="fa-solid fa-file-code"></i>
+                            <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="40"
                                 height="40"
@@ -107,41 +107,9 @@ export const RightMenu = () => {
 
                     <div className="nav-link-block">
 
-                        <a className='icon-nav-link' href="#">
-                             <i className="fa-solid fa-user-graduate"></i>
-                             <svg className="svg-icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="40"
-                                height="40"
-                                fill="">
-                                <circle
-                                    className="svg-circle"
-                                    cx="20"
-                                    cy="20"
-                                    r="20"
-                                    fill="#FFB400" />
-                            </svg>
-                        </a>
-
-                        <div className="comeup">
-                            <p className="comeup-title">CV</p>
-                            <svg
-                                className="comeup-svg"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="15.588"
-                                height="13.5"
-                                fill="none">
-                                <path fill="#2B2B2B" fillRule="evenodd" d="M7.79 13.5 15.58 0H0l7.79 13.5Z" />
-                            </svg>
-                        </div>
-
-                    </div>
-
-                    <div className="nav-link-block">
-
-                        <a className='icon-nav-link' href="#">
-                             <i className="fa-solid fa-briefcase"></i>
-                             <svg className="svg-icon"
+                        <a className='icon-nav-link' href="#portfolio">
+                            <i className="fa-solid fa-briefcase"></i>
+                            <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="40"
                                 height="40"
@@ -171,9 +139,41 @@ export const RightMenu = () => {
 
                     <div className="nav-link-block">
 
+                        <a className='icon-nav-link' href="#education">
+                            <i className="fa-solid fa-user-graduate"></i>
+                            <svg className="svg-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="">
+                                <circle
+                                    className="svg-circle"
+                                    cx="20"
+                                    cy="20"
+                                    r="20"
+                                    fill="#FFB400" />
+                            </svg>
+                        </a>
+
+                        <div className="comeup">
+                            <p className="comeup-title">Education</p>
+                            <svg
+                                className="comeup-svg"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="15.588"
+                                height="13.5"
+                                fill="none">
+                                <path fill="#2B2B2B" fillRule="evenodd" d="M7.79 13.5 15.58 0H0l7.79 13.5Z" />
+                            </svg>
+                        </div>
+
+                    </div>
+
+                    {/* <div className="nav-link-block">
+
                         <a className='icon-nav-link' href="#">
-                             <i className="fa-solid fa-pen-clip"></i>
-                             <svg className="svg-icon"
+                            <i className="fa-solid fa-pen-clip"></i>
+                            <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="40"
                                 height="40"
@@ -199,13 +199,13 @@ export const RightMenu = () => {
                             </svg>
                         </div>
 
-                    </div>
+                    </div> */}
 
                     <div className="nav-link-block">
 
-                        <a className='icon-nav-link' href="#">
-                             <i className="fa-solid fa-address-card"></i>
-                             <svg className="svg-icon"
+                        <a className='icon-nav-link' href="#contact">
+                            <i className="fa-solid fa-address-card"></i>
+                            <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="40"
                                 height="40"

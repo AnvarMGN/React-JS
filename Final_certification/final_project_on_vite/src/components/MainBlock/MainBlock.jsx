@@ -1,22 +1,23 @@
 import "./MainBlock.scss";
 
+
 export const MainBlock = () => {
   return (
     <>
       <section className="main-container">
 
-        <div className="main-about">
+        <div id="home" className="main-about slide-in-top">
 
           <article className="main-about-block">
-            <h1 className="main-about-title" >I`m Anvar Akchalov</h1>
-            <h1 className="main-about-title" >Frontend Developer</h1>
+            <h1 className="main-about-title tilt-in-fwd-tr">Anvar Akchalov</h1>
+            <h1 className="main-about-title tilt-in-fwd-bl " >Frontend Developer</h1>
             <p className="main-about-paragraph">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam placeat minus provident nesciunt voluptatum commodi nemo dolorem sapiente blanditiis!
             </p>
-            <button className="main-about-btn">
+            <a href="#contact" className="main-about-btn">
               HIRE ME
               <i className="fa-solid fa-arrow-right"></i>
-            </button>
+            </a>
           </article>
 
           <div className="main-img-box">
@@ -117,10 +118,10 @@ export const MainBlock = () => {
 
         </div>
 
-        <section className="main-services">
+        <section id="services" className="main-services slide-in-bottom ">
           <h2 className="main-services-title">My Services</h2>
           <p className="main-services-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam commodi! Quia itaque laborum maiores sint libero illo fugit eius.</p>
+            The services that I can offer.</p>
           <article className="main-services-card">
             <svg className="services-card-svg"
               xmlns="http://www.w3.org/2000/svg"
@@ -137,10 +138,10 @@ export const MainBlock = () => {
           </article>
         </section>
 
-        <section className="main-portfolio">
+        <section id="portfolio" className="main-portfolio">
           <h2 className="main-portfolio-title">Portfolio</h2>
           <p className="main-portfolio-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam commodi! Quia itaque laborum maiores sint libero illo fugit eius.</p>
+            My Projects.</p>
 
           <article className="main-portfolio-card">
             <a className="main-portfolio-link" href="#">
@@ -153,11 +154,11 @@ export const MainBlock = () => {
           </article>
         </section>
 
-        <section className="main-education">
+        <section id="education" className="main-education">
 
           <h2 className="main-education-title">Education</h2>
           <p className="main-education-text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, quisquam commodi! Quia itaque laborum maiores sint libero illo fugit eius.
+            Information about completed courses.
           </p>
 
           <div className="main-education-box">
@@ -167,14 +168,14 @@ export const MainBlock = () => {
               <article className="education-block-date">
                 <h5 className="education-block-date-title">Web Developer Courses</h5>
                 <p className="education-block-date-text">Student
-                  <span className="education-block-date-text-span">Nov 2022 - Nov 2024</span>
+                  <span className="education-block-date-text-span">2022 - 2024</span>
                 </p>
               </article>
 
               <article className="education-block-certificate">
                 <h5 className="education-block-certificate-title">Certificate Of Web Training</h5>
                 <p className="education-block-certificate-text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique laudantium consequuntur cumque exercitationem quas, quaerat nihil nobis quia nam tempora!
+                  In the learning process.
                 </p>
               </article>
 
@@ -183,7 +184,8 @@ export const MainBlock = () => {
           </div>
         </section>
 
-        <section className="contact">
+        <section id="contact" className="contact">
+
           <article className="contact-leaveform">
 
             <h2 className="contact-leaveform-title" > Leave Your Info</h2>
@@ -216,6 +218,7 @@ export const MainBlock = () => {
 
           <article className="contact-information">
             <h2 className="contact-information-title">Contact Information</h2>
+
             <article className="contact-information-box">
               <div className="contact-information-block">
                 <i className="fa-regular fa-map"></i>
@@ -233,16 +236,20 @@ export const MainBlock = () => {
                 </svg>
               </div>
 
-              <div className="contact-information-grid">
-                <p className="contact-information-grid-title">Country:</p>
-                <p className="contact-information-grid-text">Russian Federation</p>
-
-                <p className="contact-information-grid-title">City:</p>
-                <p className="contact-information-grid-text">Magnitogorsk</p>
-
-                <p className="contact-information-grid-title">Streat:</p>
-                <p className="contact-information-grid-text">Lenin Avenue 12</p>
-              </div>
+              <ul className="contact-information-grid">
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">Country:</p>
+                  <p className="contact-information-grid-text">Russian Federation</p>
+                </li>
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">City:</p>
+                  <p className="contact-information-grid-text">Magnitogorsk</p>
+                </li>
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">Streat:</p>
+                  <p className="contact-information-grid-text">Lenin Avenue 12</p>
+                </li>
+              </ul>
             </article>
 
             <article className="contact-information-box">
@@ -262,18 +269,50 @@ export const MainBlock = () => {
                 </svg>
               </div>
 
-              <div className="contact-information-grid">
-                <p className="contact-information-grid-title">Email:</p>
-                <p className="contact-information-grid-text">akchalov.a.m@yandex.ru</p>
-
-                <p className="contact-information-grid-title">Skype:</p>
-                <p className="contact-information-grid-text">Anvar Akchalov</p>
-
-                <p className="contact-information-grid-title">Telegram:</p>
-                <p className="contact-information-grid-text">Anvar Akchalov</p>
-              </div>
+              <ul className="contact-information-grid">
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">Email:</p>
+                  <p className="contact-information-grid-text">akchalov.a.m@yandex.ru</p>
+                </li>
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">Skype:</p>
+                  <p className="contact-information-grid-text">Anvar Akchalov</p>
+                </li>
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">Telegram:</p>
+                  <p className="contact-information-grid-text">Anvar Akchalov</p>
+                </li>
+              </ul>
             </article>
+
+            <article className="contact-information-box">
+              <div className="contact-information-block">
+                <i className="fa-solid fa-mobile-screen"></i>
+                <svg className="contact-information-svg"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="40"
+                  height="40"
+                  fill="">
+                  <circle
+                    className="svg-circle"
+                    cx="20"
+                    cy="20"
+                    r="20"
+                    fill="#FFB400" />
+                </svg>
+              </div>
+
+              <ul className="contact-information-grid">
+                <li className="contact-information-grid-li">
+                  <p className="contact-information-grid-title">Phone number:</p>
+                  <p className="contact-information-grid-text">+7(999)-888-7766</p>
+                </li>
+
+              </ul>
+            </article>
+
           </article>
+
         </section>
 
         {/* <section className="map"></section> */}

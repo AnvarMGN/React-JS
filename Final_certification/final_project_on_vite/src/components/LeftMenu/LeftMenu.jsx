@@ -3,7 +3,7 @@ import './LeftMenu.scss';
 export const LeftMenu = () => {
     return (
         <>
-            <aside className="left-menu">
+            <aside className="left-menu slide-in-left">
                 <article className="profile">
 
                     <h3 className="my-name">Profile</h3>
@@ -57,7 +57,7 @@ export const LeftMenu = () => {
                         <figcaption className="my-profession">Frontend Developer</figcaption>
                     </figure> */}
 
-                    {/* <div className="social-icons">
+                    <div className="social-icons">
                         <a className='icon-link' href="https://vk.com/">
                             <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -142,7 +142,7 @@ export const LeftMenu = () => {
                             </svg>
                             <i className="fab fa-brands fa-linkedin-in"></i>
                         </a>
-                    </div> */}
+                    </div>
 
                 </article>
 
