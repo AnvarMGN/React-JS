@@ -5,15 +5,82 @@ export const MainBlock = () => {
   return (
     <>
       <section className="main-container">
-
         <div id="home" className="main-about slide-in-top">
 
           <article className="main-about-block">
             <h1 className="main-about-title tilt-in-fwd-tr">Anvar Akchalov</h1>
             <h1 className="main-about-title tilt-in-fwd-bl " >Frontend Developer</h1>
-            <p className="main-about-paragraph">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem numquam placeat minus provident nesciunt voluptatum commodi nemo dolorem sapiente blanditiis!
-            </p>
+            <article className="main-about-paragraph">
+              <p>I am glad to welcome you to my portfolio page.</p>
+              <p>I am a novice frontend developer, and this site is the final work of my studies at the GeekBrains online university.</p>
+              <p>Thanks to the inspiration that GeekBrains teachers gave me, I chose to study such web technologies as HTML, CSS, JS, REACT.</p>
+              <p>However, web technologies do not stand still, they become more complex and interesting, so in order to create a modern product, a more detailed study of development tools is necessary.</p>
+              <p>I am looking forward to completing my studies so that I can start working in this exciting field as soon as possible.</p>
+              <p>I hope my diligence and patience will help me in this –</p>
+              <p>This is my ninja way!</p>
+            </article>
+
+            <svg className="ellipse1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none">
+              <circle
+                cx="8"
+                cy="8"
+                r="7"
+                stroke="#FFB400"
+                strokeOpacity=".8"
+                strokeWidth="2" />
+            </svg>
+
+            <svg className="ellipse3"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none">
+              <circle
+                cx="8"
+                cy="8"
+                r="7"
+                stroke="#05FF00"
+                strokeOpacity=".8"
+                strokeWidth="2" />
+            </svg>
+
+            <svg className="ellipse4"
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="none">
+              <circle
+                cx="8"
+                cy="8"
+                r="7"
+                stroke="#05FF00"
+                strokeOpacity=".8"
+                strokeWidth="2" />
+            </svg>
+
+            <svg className="rectangle1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="21.401"
+              height="21.401"
+              fill="none">
+              <path
+                stroke="#0047FF"
+                strokeOpacity=".8"
+                strokeWidth="2"
+                d="m7.486 1.337 12.578 6.148-6.149 12.578-12.577-6.149z" />
+            </svg>
+            {/* 
+              Рад приветствовать Вас на странице моего портфолио.
+              Я начинающий фронтенд разработчик, а этот сайт, является итоговой работой моего обучения в онлайн университете GeekBrains.
+              Благодаря вдохновению, которое передали мне преподаватели GeekBrains, я остановил свой выбор на изучении таких веб-технологий как: HTML, CSS, JS, REACT.
+              Для меня важно использовать простой и функциональный подход в разработке сайтов, чтобы он был понятный и удобный для конечного пользователя.
+              Однако, веб-технологии не стоят на месте, они становятся сложнее и интереснее, поэтому для того, чтобы создавать современный продукт необходимо более детальное изучение инструментов разработки.
+              С нетерпением жду завершения обучения, чтобы поскорее начать работу в этой увлекательной сфере. Надеюсь, моё усердие и терпение помогут мне в этом – «Таков мой путь ниндзя!».
+            */}
             <a href="#contact" className="main-about-btn">
               HIRE ME
               <i className="fa-solid fa-arrow-right"></i>
@@ -61,61 +128,6 @@ export const MainBlock = () => {
                 strokeWidth="2" />
             </svg>
           </div>
-
-          <svg className="ellipse1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="none">
-            <circle
-              cx="8"
-              cy="8"
-              r="7"
-              stroke="#FFB400"
-              strokeOpacity=".8"
-              strokeWidth="2" />
-          </svg>
-
-          <svg className="ellipse3"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="none">
-            <circle
-              cx="8"
-              cy="8"
-              r="7"
-              stroke="#05FF00"
-              strokeOpacity=".8"
-              strokeWidth="2" />
-          </svg>
-
-          <svg className="ellipse4"
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            fill="none">
-            <circle
-              cx="8"
-              cy="8"
-              r="7"
-              stroke="#05FF00"
-              strokeOpacity=".8"
-              strokeWidth="2" />
-          </svg>
-
-          <svg className="rectangle1"
-            xmlns="http://www.w3.org/2000/svg"
-            width="21.401"
-            height="21.401"
-            fill="none">
-            <path
-              stroke="#0047FF"
-              strokeOpacity=".8"
-              strokeWidth="2"
-              d="m7.486 1.337 12.578 6.148-6.149 12.578-12.577-6.149z" />
-          </svg>
-
         </div>
 
         <section id="services" className="main-services slide-in-bottom ">
@@ -144,8 +156,15 @@ export const MainBlock = () => {
             My Projects.</p>
 
           <article className="main-portfolio-card">
-            <a className="main-portfolio-link" href="#">
-              <img className="portfolio-img" src="images/main-portfolio/template_project.png" alt="template project" />
+            <a className="main-portfolio-link" href="http://p91277dr.beget.tech/">
+              {/* <img className="portfolio-img" src="images/main-portfolio/template_project.png" alt="template project" /> */}
+              <video className="main-portofolio-video"
+                // width="750"
+                autoPlay
+                muted
+                loop
+                src="video/store_clothing.mp4">
+              </video>
             </a>
             <article className="portfolio-desc">
               <h5 className="portfolio-card-title">Web Store</h5>
@@ -168,7 +187,7 @@ export const MainBlock = () => {
               <article className="education-block-date">
                 <h5 className="education-block-date-title">Web Developer Courses</h5>
                 <p className="education-block-date-text">Student
-                  <span className="education-block-date-text-span">2022 - 2024</span>
+                  <span className="education-block-date-text-span">GEEK BRAINS 2022 - 2024</span>
                 </p>
               </article>
 

@@ -1,6 +1,10 @@
+// import { useState } from 'react';
 import './RightMenu.scss'
 
 export const RightMenu = () => {
+    // const [isActive, setIsActive] = useState(false);
+
+
     return (
         <>
             <aside className="right-menu slide-in-right">
@@ -54,11 +58,28 @@ export const RightMenu = () => {
                                     fill="#FFB400" />
                             </svg>
                         </a>
+                        {/* Присвоение класса active-hover */}
+                        {/* <a 
+                        className={`icon-nav-link ${isActive ? "active-hover" : ""}`}
+                            onClick={() => setIsActive(!isActive)}
+                            href="#home">
+                            <i className="fa-solid fa-house"></i>
+                            <svg className="svg-icon"
+                                xmlns="http://www.w3.org/2000/svg"
+                                width="40"
+                                height="40"
+                                fill="">
+                                <circle
+                                    className="svg-circle"
+                                    cx="20"
+                                    cy="20"
+                                    r="20"
+                                    fill="#FFB400" />
+                            </svg>
+                        </a> */}
 
                         <div className="comeup">
-
                             <p className="comeup-title">Home</p>
-
                             <svg
                                 className="comeup-svg"
                                 xmlns="http://www.w3.org/2000/svg"
@@ -68,9 +89,7 @@ export const RightMenu = () => {
                                 <path fill="#2B2B2B" fillRule="evenodd" d="M7.79 13.5 15.58 0H0l7.79 13.5Z" />
                             </svg>
                             {/* <i className="fa-solid fa-caret-down"></i> */}
-
                         </div>
-
                     </div>
 
                     <div className="nav-link-block">
