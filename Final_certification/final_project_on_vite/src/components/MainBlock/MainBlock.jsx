@@ -14,10 +14,11 @@ export const MainBlock = () => {
               <p>I am glad to welcome you to my portfolio page.</p>
               <p>I am a novice frontend developer, and this site is the final work of my studies at the GeekBrains online university.</p>
               <p>Thanks to the inspiration that GeekBrains teachers gave me, I chose to study such web technologies as HTML, CSS, JS, REACT.</p>
+              <p>It is important for me to use a simple and functional approach in website development so that it is understandable and user-friendly for each user.</p>
               <p>However, web technologies do not stand still, they become more complex and interesting, so in order to create a modern product, a more detailed study of development tools is necessary.</p>
               <p>I am looking forward to completing my studies so that I can start working in this exciting field as soon as possible.</p>
               <p>I hope my diligence and patience will help me in this –</p>
-              <p>This is my ninja way!</p>
+              <p>&quot;This is my ninja way!&quot;</p>
             </article>
 
             <svg className="ellipse1"
@@ -77,7 +78,7 @@ export const MainBlock = () => {
               Рад приветствовать Вас на странице моего портфолио.
               Я начинающий фронтенд разработчик, а этот сайт, является итоговой работой моего обучения в онлайн университете GeekBrains.
               Благодаря вдохновению, которое передали мне преподаватели GeekBrains, я остановил свой выбор на изучении таких веб-технологий как: HTML, CSS, JS, REACT.
-              Для меня важно использовать простой и функциональный подход в разработке сайтов, чтобы он был понятный и удобный для конечного пользователя.
+              Для меня важно использовать простой и функциональный подход в разработке сайтов, чтобы он был понятный и удобный для каждого пользователя.
               Однако, веб-технологии не стоят на месте, они становятся сложнее и интереснее, поэтому для того, чтобы создавать современный продукт необходимо более детальное изучение инструментов разработки.
               С нетерпением жду завершения обучения, чтобы поскорее начать работу в этой увлекательной сфере. Надеюсь, моё усердие и терпение помогут мне в этом – «Таков мой путь ниндзя!».
             */}
@@ -333,7 +334,8 @@ export const MainBlock = () => {
           </article>
 
         </section>
-
+        
+        {/* Добавить карту(местоположение) - пока не реализованно */}
         {/* <section className="map"></section> */}
 
         <footer className="footer">

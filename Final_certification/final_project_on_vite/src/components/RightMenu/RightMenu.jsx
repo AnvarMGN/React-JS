@@ -1,8 +1,8 @@
 // import { useState } from 'react';
-import './RightMenu.scss'
+import './RightMenu.scss';
 
 export const RightMenu = () => {
-    // const [isActive, setIsActive] = useState(false);
+    // const [isActive, setIsActive] = useState(false); // подсветка ссылок меня при прокрутке - пока не реализовано
 
 
     return (
