@@ -47,18 +47,25 @@
 
     background: base.$white;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
     .contrast {
         display: flex;
         justify-content: center;
 
         padding-top: 50px;
         padding-bottom: 200px;
+        .svg-contrast g path{
+            fill: base.$black;
+        }
     }
 
     .nav-link {
         display: flex;
         flex-direction: column;
-        gap: 25px;
+        gap: 40px;
     }
 
     .nav-link-block {
@@ -81,7 +88,7 @@
             }
 
             .svg-circle {
-                fill: base.$grayBackground;
+                fill: base.$lightGrayBackground;
             }
 
             .fa-file-code {
@@ -128,6 +135,7 @@
                 position: absolute;
                 top: 20px;
                 left: 46px;
+                color: base.$black;
             }
         }
 
@@ -150,6 +158,9 @@
             transition: opacity 0.8s, visibility 0.5s;
             opacity: 1;
             visibility: visible;
+        }
+        .comeup-svg path{
+            fill: base.$black;
         }
 
         .fa-solid {

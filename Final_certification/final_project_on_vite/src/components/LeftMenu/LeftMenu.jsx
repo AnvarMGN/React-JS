@@ -59,7 +59,7 @@ export const LeftMenu = () => {
                     </figure> */}
 
                     <div className="social-icons">
-                        <a className='icon-link' href="https://vk.com/">
+                        <a className='icon-link' href="https://t.me/anvar_akchalov">
                             <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -71,9 +71,9 @@ export const LeftMenu = () => {
                                     r="12"
                                     fill="#FFB400" />
                             </svg>
-                            <i className="fa fa-brands fa-vk"></i>
+                            <i className="fa fa-brands fa-telegram"></i>
                         </a>
-                        <a className='icon-link' href="https://www.facebook.com">
+                        <a className='icon-link' href="mailto:akchalov.a.m@yandex.ru">
                             <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -85,9 +85,9 @@ export const LeftMenu = () => {
                                     r="12"
                                     fill="#FFB400" />
                             </svg>
-                            <i className="fa fa-brands fa-facebook-f"></i>
+                            <i className="fa-regular fa-envelope"></i>
                         </a>
-                        <a className='icon-link' href="https://www.youtube.com">
+                        <a className='icon-link' href="https://github.com/AnvarMGN">
                             <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -99,9 +99,9 @@ export const LeftMenu = () => {
                                     r="12"
                                     fill="#FFB400" />
                             </svg>
-                            <i className="fa-brands fa-youtube"></i>
+                            <i className="fa-brands fa-github"></i>
                         </a>
-                        <a className='icon-link' href="https://twitter.com">
+                        <a className='icon-link' href="https://vk.com/anvar_akchalov">
                             <svg className="svg-icon"
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
@@ -113,35 +113,7 @@ export const LeftMenu = () => {
                                     r="12"
                                     fill="#FFB400" />
                             </svg>
-                            <i className="fa-brands fa-twitter"></i>
-                        </a>
-                        <a className='icon-link' href="https://apps.microsoft.com/detail/9nblggh5l9xt?hl=en-US&gl=US">
-                            <svg className="svg-icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                fill="none">
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="12"
-                                    fill="#FFB400" />
-                            </svg>
-                            <i className="fa-brands fa-instagram"></i>
-                        </a>
-                        <a className='icon-link' href="https://www.linkedin.com">
-                            <svg className="svg-icon"
-                                xmlns="http://www.w3.org/2000/svg"
-                                width="24"
-                                height="24"
-                                fill="none">
-                                <circle
-                                    cx="12"
-                                    cy="12"
-                                    r="12"
-                                    fill="#FFB400" />
-                            </svg>
-                            <i className="fab fa-brands fa-linkedin-in"></i>
+                            <i className="fa-brands fa-vk"></i>
                         </a>
                     </div>
 
@@ -185,11 +157,6 @@ export const LeftMenu = () => {
                             English -
                             <span> pre-intermediate</span>
                         </li>
-                        {/* <li>
-                            <i className="fa-solid fa-language"></i>
-                            Tatar -
-                            <span> pre-intermediate</span>
-                        </li> */}
                     </ul>
                 </article>
 
@@ -238,20 +205,8 @@ export const LeftMenu = () => {
                         </li>
                         <li className="extra-skills-li">
                             <i className="fa-brands fa-react"></i>
-                            <span className="extra-skills-text">Redux</span>
+                            <span className="extra-skills-text">React-Redux</span>
                         </li>
-
-                        {/* <i className="fa-brands fa-sass"></i>
-                        <span className="extra-skills-text desc1">Sass/Scss</span>
-
-                        <i className="fa-brands fa-node-js"></i>
-                        <span className="extra-skills-text desc2">Node.js - basics</span>
-
-                        <i className="fa-brands fa-react"></i>
-                        <span className="extra-skills-text desc3">Redux</span>
-
-                        <i className="fa-brands fa-github"></i>
-                        <span className="extra-skills-text desc4">GIT Knowledge</span> */}
                     </ul>
                 </article>
                 <DownloadResumeButton />

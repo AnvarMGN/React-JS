@@ -94,6 +94,7 @@
 
         .fa-id-card {
             font-size: 32px;
+            color: base.$black;
         }
 
         // .my-profession {
@@ -115,44 +116,30 @@
             .icon-link {
                 position: relative;
 
-                .fa-vk {
-                    position: absolute;
-                    left: 5px;
-                    top: 4px;
-                    color: base.$black;
-                }
-
-                .fa-facebook-f {
-                    position: absolute;
-                    left: 7px;
-                    top: 4px;
-                    color: base.$black;
-                }
-
-                .fa-youtube {
-                    position: absolute;
-                    left: 3px;
-                    top: 4px;
-                    color: base.$black;
-                }
-
-                .fa-twitter {
+                .fa-telegram {
                     position: absolute;
                     left: 4px;
                     top: 4px;
                     color: base.$black;
                 }
 
-                .fa-instagram {
+                .fa-envelope {
                     position: absolute;
-                    left: 5px;
+                    left: 4px;
                     top: 4px;
                     color: base.$black;
                 }
 
-                .fa-linkedin-in {
+                .fa-github {
                     position: absolute;
-                    left: 6px;
+                    left: 4px;
+                    top: 4px;
+                    color: base.$black;
+                }
+
+                .fa-vk {
+                    position: absolute;
+                    left: 5px;
                     top: 4px;
                     color: base.$black;
                 }
@@ -179,7 +166,8 @@
 
             margin-bottom: 25px;
 
-            color: base.$black;
+            color: base.$paragraphFont;
+
             font-family: Inter;
             font-size: 15px;
             font-weight: 400;
@@ -191,12 +179,13 @@
                 justify-content: space-between;
                 align-items: baseline;
 
-                .right-text-available {
-                    color: base.$available;
-                }
+                // .right-text-available {
+                //     color: base.$available;
+                // }
             }
 
             .left-text {
+                color: base.$black;
                 background-color: base.$yellow;
                 padding-left: 5px;
                 padding-right: 5px;
@@ -408,6 +397,9 @@
 
             .svg-download-cv {
                 margin-left: 20px;
+                & path{
+                    fill: base.$black;
+                }
             }
         }
 

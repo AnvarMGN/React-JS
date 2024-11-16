@@ -1,3 +1,4 @@
+import { LeaveForm } from "./LeaveForm";
 import "./MainBlock.scss";
 
 
@@ -5,6 +6,7 @@ export const MainBlock = () => {
   return (
     <>
       <section className="main-container">
+
         <div id="home" className="main-about slide-in-top">
 
           <article className="main-about-block">
@@ -168,8 +170,8 @@ export const MainBlock = () => {
               </video>
             </a>
             <article className="portfolio-desc">
-              <h5 className="portfolio-card-title">Web Store</h5>
-              <p className="portfolio-card-text">Description of the store.</p>
+              <h5 className="portfolio-card-title">Web Clothing Store</h5>
+              <p className="portfolio-card-text">The project is based on React.</p>
             </article>
           </article>
         </section>
@@ -206,35 +208,7 @@ export const MainBlock = () => {
 
         <section id="contact" className="contact">
 
-          <article className="contact-leaveform">
-
-            <h2 className="contact-leaveform-title" > Leave Your Info</h2>
-            <form className="contact-leaveform-box">
-              <div className="contact-leaveform-block">
-                <label htmlFor="firstName">Your Full Name (Required)</label>
-                <input className="contact-leaveform-input" type="text" />
-              </div>
-
-              <div className="contact-leaveform-block">
-                <label htmlFor="firstName">Your Email (Required)</label>
-                <input className="contact-leaveform-input" type="text" />
-              </div>
-
-              <div className="contact-leaveform-block">
-                <label htmlFor="firstName">Subject</label>
-                <input className="contact-leaveform-input" type="text" />
-              </div>
-
-              <div className="contact-leaveform-block">
-                <label htmlFor="firstName">Your Message</label>
-                <textarea className="contact-leaveform-input-mess" type="text" name="" id=""></textarea>
-                {/* <input className="contact-leaveform-input-mess" type="text" /> */}
-              </div>
-
-              <button className="contact-leaveform-btn" type="submit">SEND MESSAGE</button>
-            </form>
-
-          </article>
+          <LeaveForm />
 
           <article className="contact-information">
             <h2 className="contact-information-title">Contact Information</h2>
@@ -334,12 +308,12 @@ export const MainBlock = () => {
           </article>
 
         </section>
-        
-        {/* Добавить карту(местоположение) - пока не реализованно */}
+
+        {/* Добавить карту(местоположение) - не реализованно */}
         {/* <section className="map"></section> */}
 
         <footer className="footer">
-          <p>2024 All Rights Reserved. Anvar Akchalov</p>
+          <p> <span><i className="fa-regular fa-copyright"></i></span> 2024 Anvar Akchalov</p>
         </footer>
       </section>
     </>

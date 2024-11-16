@@ -4,7 +4,6 @@ import { RightMenu } from "../RightMenu/RightMenu";
 import "./Container.scss";
 
 export const Container = () => {
-  
   return (
     <>
       <div className="container center">
@@ -14,4 +13,4 @@ export const Container = () => {
       </div>
     </>
   )
-}
+};

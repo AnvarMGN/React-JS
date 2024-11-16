@@ -46,9 +46,19 @@ npm i sass-migrator
 npm install -g sass-migrator  -  @import правила для загрузки других файлов с единым глобальным пространством имен
 
 
-- Material ui
-https://mui.com/material-ui/getting-started/
+<!-- - Material ui
+https://mui.com/material-ui/getting-started/ -->
+
+
+- Animista
 
 
 - Fontawesome
 npm i @fortawesome/react-fontawesome
+
+
+- GitHub Pages
+- Beget
+
+
+- npm install redux @reduxjs/toolkit

@@ -15,3 +15,35 @@ $darkView2: rgb(58, 59, 60);
 
 $available: rgb(126, 185, 66);
 
+// @if $isDarkMode {
+//     $white: rgb(63, 63, 63);
+//     $paragraphFont: rgb(255, 255, 255);
+//     $black: rgb(128, 128, 128);
+//     $lightGrayBackground: rgb(43, 43, 43);
+// }
+
+
+// Для работы с светлой и тёмной темой нужен другой подход:
+// // base.module.scss
+// :root {
+//     --text-color: black;
+//     --background-color: white;
+//   }
+  
+//   container {
+//     color: var(--text-color);
+//     background-color: var(--background-color);
+//   }
+  
+//   .dark-mode {
+//     --text-color: white;
+//     --background-color: black;
+//   }
+
+// JavaScript
+// const button = document.querySelector('button'); // Найдите вашу кнопку
+// const body = document.querySelector('body');
+
+// button.addEventListener('click', () => {
+//   body.classList.toggle('dark-theme');
+// });
